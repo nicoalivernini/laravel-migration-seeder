@@ -13,7 +13,9 @@ class UpdateHolidaysTable extends Migration
      */
     public function up()
     {
-        //
+      Schema::table('holidays', function(Blueprint $table) {
+        $table->tinyInteger('is_available')->unsigned()->default(1)->after('country');
+      });
     }
 
     /**
@@ -23,6 +25,8 @@ class UpdateHolidaysTable extends Migration
      */
     public function down()
     {
-        //
+      Schema::table('holidays', function (Blueprint $table){
+        $table->dropColumn('is_available');
+      });
     }
 }
