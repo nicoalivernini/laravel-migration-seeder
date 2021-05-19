@@ -16,12 +16,14 @@ class CreateHolidaysTable extends Migration
         Schema::create('holidays', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('duration', 100);
-            $table->smallInteger('cost');
-            $table->string('typology', 100);
-            $table->string('country', 50);
-            $table->string('category', 100);
             $table->smallInteger('people');
+            $table->string('duration', 100);
+            $table->string('country', 50);
+            $table->tinyInteger('is_available')->unsigned()->default(1);
+            $table->string('typology', 100);
+            $table->string('category', 100);
+            $table->float('cost', 8, 2);
+
         });
     }
 
