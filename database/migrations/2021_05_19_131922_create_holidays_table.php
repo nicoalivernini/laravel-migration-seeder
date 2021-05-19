@@ -17,7 +17,7 @@ class CreateHolidaysTable extends Migration
             $table->id();
             $table->timestamps();
             $table->smallInteger('people');
-            $table->string('duration', 100);
+            $table->smallInteger('duration');
             $table->string('country', 50);
             $table->string('typology', 100);
             $table->string('category', 100);
