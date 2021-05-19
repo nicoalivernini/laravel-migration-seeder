@@ -6,12 +6,17 @@
   <div class="card">
     <div class="content-card">
       <img src="{{ asset('img/img-holidays.jpg') }}" alt="">
-      <p>For {{ $holiday->people }} people</p>
-      <p>A travel for {{ $holiday->duration }} days</p>
-      <p>In {{ $holiday->country }}</p>
-      <p>{{ $holiday->typology }}</p>
-      <p>{{ $holiday->category }}</p>
-      <p>{{ $holiday->cost }}€</p>
+      <div class="description">
+        <p>Travel for {{ $holiday->people }} in <br> {{ $holiday->country }}
+          for {{ $holiday->duration }} days</p>
+      </div>
+      <div class="cost">
+        <p>{{ $holiday->cost }}€</p>
+      </div>
+      <div class="category">
+        <span>{{ $holiday->typology }} - </span>
+        <span>{{ $holiday->category }}</span>
+      </div>
     </div>
   </div>
   @endforeach

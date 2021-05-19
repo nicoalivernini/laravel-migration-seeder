@@ -5,7 +5,7 @@
   align-items: center;
   .card {
     width: calc(100% / 4 - 20px);
-    margin: 10px 0;
+    margin: 15px 0;
     .content-card {
       display: flex;
       justify-content: center;
@@ -13,6 +13,17 @@
       align-items: center;
       img {
         width: 200px;
+      }
+      .description {
+        margin: 5px 0;
+        text-align: center;
+      }
+      .cost {
+        margin: 5px 0;
+      }
+      .category {
+        margin: 5px 0;
+        font-style: italic;
       }
     }
   }

@@ -13,7 +13,7 @@
 
 .container .card {
   width: calc(100% / 4 - 20px);
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 .container .card .content-card {
@@ -25,5 +25,19 @@
 
 .container .card .content-card img {
   width: 200px;
+}
+
+.container .card .content-card .description {
+  margin: 5px 0;
+  text-align: center;
+}
+
+.container .card .content-card .cost {
+  margin: 5px 0;
+}
+
+.container .card .content-card .category {
+  margin: 5px 0;
+  font-style: italic;
 }
 
