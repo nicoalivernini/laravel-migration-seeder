@@ -7,7 +7,7 @@
     <div class="content-card">
       <img src="{{ asset('img/img-holidays.jpg') }}" alt="">
       <div class="description">
-        <p>Travel for {{ $holiday->people }} in <br> {{ $holiday->country }}
+        <p>Travel for {{ $holiday->people }} people in <br> {{ $holiday->country }}
           for {{ $holiday->duration }} days</p>
       </div>
       <div class="cost">
